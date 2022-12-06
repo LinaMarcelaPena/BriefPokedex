@@ -3,15 +3,21 @@ import { CommonModule } from '@angular/common';
 
 //components
 import { GeneralHeaderComponent } from './general-header/general-header.component';
+import { GeneralSearchComponent } from './general-search/general-search.component';
+import { GeneralListPokemonComponent } from './general-list-pokemon/general-list-pokemon.component';
 
 
 
 @NgModule({
   declarations: [
-    GeneralHeaderComponent
+    GeneralHeaderComponent,
+    GeneralSearchComponent,
+    GeneralListPokemonComponent
   ],
   exports: [
-    GeneralHeaderComponent
+    GeneralHeaderComponent,
+    GeneralSearchComponent,
+    GeneralListPokemonComponent
   ],  
   imports: [
     CommonModule
