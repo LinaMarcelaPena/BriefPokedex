@@ -1,0 +1,17 @@
+/* Estilos globales */
+@import '/src/config-scss/variables.scss';
+@import '/src/config-scss/reset.scss';
+@import '/src/config-scss/rem-calc.scss';
+
+
+html {
+	font-family: 'Roboto', sans-serif;
+	background: var(--color-mobile);
+}
+
+main {
+	max-width: rem-calc(600);
+	box-sizing: border-box;
+	padding: 0 20px;
+	margin: 0 auto;
+}
