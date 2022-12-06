@@ -1,0 +1,31 @@
+@import '../../../config-scss/rem-calc.scss';
+:host {
+    form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        //colocar espacio alrededor de lo que escribo en la busqueda y el contenedor del buscador
+        padding: rem-calc(8) rem-calc(15);
+        background-color: rgb(255, 255, 255, 0.30);
+        border-radius: rem-calc(10);
+        input{
+            width: 95%;
+            background: none;
+            border: none;
+            font-size: rem-calc(18);
+            color: rgb(5, 5, 5);
+            font-size: large;
+            font-weight: 600;
+            &::placeholder {
+                color: rgb(109, 68, 15);
+                font-weight: 1000;
+            }
+        }
+    }
+
+    //imagen pokeball
+    form img {
+        width: 80px;
+    }
+}
