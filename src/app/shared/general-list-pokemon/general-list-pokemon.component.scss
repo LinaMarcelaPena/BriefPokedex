@@ -5,58 +5,58 @@
 		@content;
 	}
 }
-
-
 :host {
-
-    @include mv (rem-calc(430)) {
+     
+    @include mv (rem-calc(600)) {
         display: block;
+        flex-direction: column;
     }
 
-    @include mv (rem-calc(1600)) {
-        display: flex;
-        justify-content: space-between;
+    @include mv (rem-calc(1500)) {
+         display: flex;
+        align-items: center;
     }
 
     .pokemon {
-        align-items: space-between; 
         flex-wrap: wrap;
         margin: 0 auto;
-        max-width: 25%;
+        max-width: 10%;
         background-color: #87B677;
-  	    border-radius: 10px;
-  	    box-shadow: 0 3px 15px rgba(135, 182, 119, 100);
-        margin-bottom: rem-calc(10);
   	    margin: 10px;
         padding: 20px;
         text-align: center;
         text-decoration: none;
-        height: rem-calc(220);
+        height: rem-calc(350);
         color: black;
+        
+
 
 
         @include mv (rem-calc(430)) {
             padding: 10px;
-            height: rem-calc(250);
+            height: rem-calc(400);
             max-width: 46%;
         }
 
         @include mv (rem-calc(1600)) {
-            height: rem-calc(157);
+            height: rem-calc(290);
             padding: rem-calc(60);
+            display: flex;
+            justify-content: center;
+            
         }
     }
 
     .container{
         background-color: rgba(30, 133, 40, 100);
-        border-radius: 50%;
-        width: 120px;
-        height: 120px;
-        text-align: center;
+        border-radius: 60%;
+        height: 140px;
+        padding: 20%;
+        
 
         img{
-            max-width: 90%;
-            margin-top: 20px;
+            max-width: 120px;
+            margin-top: 30px;
         }
     }
 
@@ -67,6 +67,11 @@
             font-size: rem-calc(22);
             margin-bottom: rem-calc(10);
             text-transform: capitalize;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 35%;
+         
         }
 
         ul{
