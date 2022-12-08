@@ -1,5 +1,8 @@
+<!-- Buscador por lista -->
+<general-search (emmitSearch)="getSearch($event)"></general-search>   
+<section class="listagem">
 <ng-template ngFor let-pokemon [ngForOf]="getAllPokemons">
-<a class="pokemon" *ngIf="pokemon.status">
+<a [routerLink]="['details', pokemon.status.id]" class="pokemon" *ngIf="pokemon.status">
     <section class="container">
         <img 
         [src]="pokemon.status.sprites.other.dream_world.front_default" 
@@ -19,3 +22,4 @@
     </section>
 </a>
 </ng-template>
+</section>
