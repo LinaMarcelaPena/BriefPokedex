@@ -1,0 +1,107 @@
+@import '../../../config-scss/rem-calc.scss';
+
+@mixin mv($media:430) {
+	@media screen and (max-width: $media) {
+		@content;
+	}
+}
+
+
+:host {
+
+    @include mv (rem-calc(430)) {
+        display: block;
+    }
+
+    @include mv (rem-calc(1600)) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pokemon {
+        align-items: space-between; 
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 25%;
+        background-color: #87B677;
+  	    border-radius: 10px;
+  	    box-shadow: 0 3px 15px rgba(135, 182, 119, 100);
+  	    margin: 10px;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        height: rem-calc(220);
+        color: black;
+
+
+        @include mv (rem-calc(430)) {
+            padding: 10px;
+            height: rem-calc(250);
+            max-width: 46%;
+        }
+
+        @include mv (rem-calc(1600)) {
+            height: rem-calc(157);
+            padding: rem-calc(60);
+        }
+    }
+
+    .container{
+        background-color: rgba(30, 133, 40, 100);
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        text-align: center;
+
+        img{
+            max-width: 90%;
+            margin-top: 20px;
+        }
+    }
+
+    .informacion {
+        h2{
+            font-weight: 800;
+            font-style: italic;
+            font-size: rem-calc(22);
+            margin-bottom: rem-calc(10);
+        }
+
+        ul{
+            display: flex;
+            justify-content: space-around;
+
+            li{
+                background: var(--cinza);
+                font-size: rem-calc(10);
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                width: rem-calc(60);
+                margin-bottom: rem-calc(10);
+                
+                @include mv (rem-calc(430)) {
+                    font-size: 1.125rem;
+                    padding: 0.35rem;
+                }
+
+                @include mv (rem-calc(1600)) {
+                    font-size: 1.125rem;
+                    padding: 0.40rem;
+                }
+
+            }
+        }
+
+        
+        
+        
+        
+    }
+
+    
+
+    
+}
