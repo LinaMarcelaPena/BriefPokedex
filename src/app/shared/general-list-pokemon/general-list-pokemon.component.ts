@@ -8,7 +8,9 @@ import { ConexionApiService } from 'src/app/service/conexion-api.service';
 })
 export class GeneralListPokemonComponent implements OnInit {
 
+  private setAllPokemons: any;
   public getAllPokemons: any;
+  
 
   constructor(
     private conexionApiService: ConexionApiService
@@ -16,9 +18,16 @@ export class GeneralListPokemonComponent implements OnInit {
   ngOnInit(): void {
     this.conexionApiService.apiListAllPokemons.subscribe(
       res => {
-        this.getAllPokemons = res.results;
-        console.log(this.getAllPokemons);
+        this.setAllPokemons = res.results;
+        this.getAllPokemons = this.setAllPokemons;
       }
     );
+  }
+
+  public getSearch(value: string){
+    const filter = this.setAllPokemons.filter( (res: any ) => {
+      return !res.name.indexOf(value.toLowerCase());
+    });
+    this.getAllPokemons = filter;
   }
 }

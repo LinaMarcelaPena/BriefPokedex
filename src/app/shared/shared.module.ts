@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { GeneralHeaderComponent } from './general-header/general-header.component';
 import { GeneralSearchComponent } from './general-search/general-search.component';
 import { GeneralListPokemonComponent } from './general-list-pokemon/general-list-pokemon.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -20,7 +21,8 @@ import { GeneralListPokemonComponent } from './general-list-pokemon/general-list
     GeneralListPokemonComponent
   ],  
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class SharedModule { }
