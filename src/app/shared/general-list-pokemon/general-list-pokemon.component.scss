@@ -26,6 +26,7 @@
         background-color: #87B677;
   	    border-radius: 10px;
   	    box-shadow: 0 3px 15px rgba(135, 182, 119, 100);
+        margin-bottom: rem-calc(10);
   	    margin: 10px;
         padding: 20px;
         text-align: center;
@@ -65,6 +66,7 @@
             font-style: italic;
             font-size: rem-calc(22);
             margin-bottom: rem-calc(10);
+            text-transform: capitalize;
         }
 
         ul{
