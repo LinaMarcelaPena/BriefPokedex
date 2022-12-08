@@ -1,1 +1,36 @@
-<p>details works!</p>
+<!-- header titulo pokedex -->
+<general-header></general-header>
+<main>
+    <section class="name">
+      <h1 class="slideInLeft">{{pokemon[0].name}}</h1>
+    </section>
+
+    <section class="details">
+        <!-- ruta donde se encuentra la imagen dentro de la matriz de informacion que nos trae la pokeaApi -->
+      <img
+        [src]="pokemon[0].sprites.other.dream_world.front_default"
+        [alt]="pokemon[0].name"
+        class="slideInDown"
+      >
+      <!-- Estadisticas o caracteristicas del pokemon seleccionado -->
+      <article class="pokemon__status__statistics fadeIn">
+        <section>
+          <h3>Estatísticas</h3>
+
+          <ol>
+            <li *ngFor="let value of pokemon[0].stats">
+                {{ value.stat.name }}
+
+              <strong>
+                {{ value.base_stat }}
+              </strong>
+            </li>
+          </ol>
+        </section>
+        <!-- regesar a la pagina anterior -->
+        <a [routerLink]="['']">
+          Regresar
+        </a>
+      </article>
+    </section>
+</main>
