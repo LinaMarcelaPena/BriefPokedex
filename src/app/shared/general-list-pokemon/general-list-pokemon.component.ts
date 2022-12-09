@@ -30,4 +30,5 @@ export class GeneralListPokemonComponent implements OnInit {
     });
     this.getAllPokemons = filter;
   }
+  
 }
