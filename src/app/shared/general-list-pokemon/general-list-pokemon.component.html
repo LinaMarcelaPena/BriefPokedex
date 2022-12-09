@@ -3,11 +3,31 @@
 <section class="listagem">
 <ng-template ngFor let-pokemon [ngForOf]="getAllPokemons">
 <a [routerLink]="['details', pokemon.status.id]" class="pokemon" *ngIf="pokemon.status">
+    
+    <div ng-app="slider" ng-controller="MainCtrl">
+        <div class="slider" ng-controller="SliderCtrl">
+        <div class="left">
+          <button ng-click="start=start+1; setSlides=setSlides+1" 
+                ng-hide="setSlides==slides.length">
+          <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+        </button>
+        </div>
     <section class="container">
         <img 
         [src]="pokemon.status.sprites.other.dream_world.front_default" 
         [alt]="pokemon.name">
     </section>
+
+    <div class="right">
+        <button ng-click="start=start-1; setSlides=setSlides-1" 
+              ng-hide="start==0"> 
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </button>
+       </div>
+    </div>
+      
+    </div>
+    
     <section class="informacion">
         <h2>
            {{ pokemon.name }}

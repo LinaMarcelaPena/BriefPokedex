@@ -1,6 +1,7 @@
 <!-- header titulo pokedex -->
 <general-header></general-header>
 <main>
+    
     <section class="name">
       <h1 class="slideInLeft">{{pokemon[0].name}}</h1>
     </section>
@@ -29,14 +30,13 @@
                 
               </strong>
             </li>
-            
           </ol>
-
-        
         <!-- regesar a la pagina anterior -->
-        <a [routerLink]="['']">
+        <section class="boton">
+        <a [routerLink]="['']" class="btn btn__secondary">
           Regresar
         </a>
+      </section>
       </article>
     </section>
     

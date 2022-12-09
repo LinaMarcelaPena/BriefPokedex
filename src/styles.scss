@@ -2,6 +2,8 @@
 @import '/src/config-scss/variables.scss';
 @import '/src/config-scss/reset.scss';
 @import '/src/config-scss/rem-calc.scss';
+@import '/src/config-scss/btn.scss';
+@import '/src/config-scss/animation.scss';
 
 @mixin mv($media:430) {
 	@media screen and (max-width: $media) {
