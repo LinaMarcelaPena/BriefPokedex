@@ -1,11 +1,11 @@
-#API REST
+# API REST
 
-#API:
+## API:
 “interfaz de programación de aplicaciones”. 
 En el contexto de las API, la palabra aplicación se refiere
 a cualquier software con una función distinta.
 
-#REST
+## REST
 
 transferencia de estado representacional
 REST define un conjunto de funciones como GET, PUT, DELETE, etc.
@@ -24,14 +24,14 @@ utilizan para intercambiar información de manera segura
 a través de Internet,una API es el mensajero que permite 
 la comunicación o interacción entre aplicaciones 
 
-#Axios
+# Axios
 
 Axios nos permite hacer solicitudes a un servidor con los
  métodos GET, DELETE, POST, PUT, PATCH, HEAD Y OPTIONS.
 Los datos que recibimos del servidor vienen en forma de 
 objetos JavaScript,  Axios los serializa en formato JSON.
 
-#Fetch
+# Fetch
 
 
 Fetch ofrece una definición genérica de los objetos Request y Response
@@ -39,7 +39,7 @@ El método fetch() toma un argumento obligatorio, la ruta de acceso al
 recurso que desea recuperar. Devuelve una Promise (en-US) que resuelve 
 en Response a esa petición, sea o no correcta.
 
-#Endpoint
+# Endpoint
 
 Un endpoint es una pasarela que conecta los procesos del servidor de la 
 aplicación con una interfaz externa. En otras palabras, es la dirección 
